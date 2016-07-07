@@ -1,0 +1,81 @@
+<%= form_for(@company) do |f| %>
+  <% if @company.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@company.errors.count, "error") %> prohibited this company from being saved:</h2>
+
+      <ul>
+      <% @company.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :symbol %><br>
+    <%= f.text_field :symbol %>
+  </div>
+  <div class="field">
+    <%= f.label :pr01 %><br>
+    <%= f.text_field :pr01 %>
+  </div>
+  <div class="field">
+    <%= f.label :pr02 %><br>
+    <%= f.text_field :pr02 %>
+  </div>
+  <div class="field">
+    <%= f.label :pr04 %><br>
+    <%= f.text_field :pr04 %>
+  </div>
+  <div class="field">
+    <%= f.label :pr13 %><br>
+    <%= f.text_field :pr13 %>
+  </div>
+  <div class="field">
+    <%= f.label :pr26 %><br>
+    <%= f.text_field :pr26 %>
+  </div>
+  <div class="field">
+    <%= f.label :pr03 %><br>
+    <%= f.text_field :pr03 %>
+  </div>
+  <div class="field">
+    <%= f.label :pr39 %><br>
+    <%= f.text_field :pr39 %>
+  </div>
+  <div class="field">
+    <%= f.label :pr52 %><br>
+    <%= f.text_field :pr52 %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_year_to_date %><br>
+    <%= f.number_field :pr_year_to_date %>
+  </div>
+  <div class="field">
+    <%= f.label :price_current %><br>
+    <%= f.text_field :price_current %>
+  </div>
+  <div class="field">
+    <%= f.label :warranted_price %><br>
+    <%= f.text_field :warranted_price %>
+  </div>
+  <div class="field">
+    <%= f.label :per_FY1 %><br>
+    <%= f.text_field :per_FY1 %>
+  </div>
+  <div class="field">
+    <%= f.label :per_FY2 %><br>
+    <%= f.text_field :per_FY2 %>
+  </div>
+  <div class="field">
+    <%= f.label :per_LFY %><br>
+    <%= f.text_field :per_LFY %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

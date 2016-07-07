@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ResearchPlatform</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav class="top-bar" data-topbar>
+  <section class="top-bar-section">
+    <ul class="nav nav-pills">
+      <li><%= link_to "Home", home_path %></li>
+      <li><%= link_to "Search", companies_path %></li>
+    </ul>
+  </section>
+</nav>
+
+<div id="container">
+  <%= yield %>
+</div>
+
+</body>
+</html>

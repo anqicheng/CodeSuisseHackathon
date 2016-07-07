@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  symbol: MyString
+  pr01: 1.5
+  pr02: 1.5
+  pr04: 1.5
+  pr13: 1.5
+  pr26: 1.5
+  pr03: 1.5
+  pr39: 1.5
+  pr52: 1.5
+  pr_year_to_date: 1
+  price_current: 1.5
+  warranted_price: 1.5
+  per_FY1: 1.5
+  per_FY2: 1.5
+  per_LFY: 1.5
+
+two:
+  name: MyString
+  symbol: MyString
+  pr01: 1.5
+  pr02: 1.5
+  pr04: 1.5
+  pr13: 1.5
+  pr26: 1.5
+  pr03: 1.5
+  pr39: 1.5
+  pr52: 1.5
+  pr_year_to_date: 1
+  price_current: 1.5
+  warranted_price: 1.5
+  per_FY1: 1.5
+  per_FY2: 1.5
+  per_LFY: 1.5
